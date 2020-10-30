@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.BackImg {
+  width: 100%;
+  height: 100%;
+  background-image: url("back1.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(126, 40, 196);
+}
+
+.ProfileCard {
+  width: 300px;
+}
+img {
+  height: 250px;
+  border-radius: 100%;
+}
