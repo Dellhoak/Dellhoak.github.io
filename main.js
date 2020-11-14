@@ -1,17 +1,26 @@
-let mainNav=document.getElementById('main-nav');
-let navbarToggle=document.getElementById('navbar-toggle');
+const navSlide = ()=> {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+    //toggle nav
 
+    burger.addEventListener('click',() => {
+        nav.classList.toggle('nav-active');
 
+        navLinks.forEach((link, index) => {
+            if(link.style.animation){
+                link.style.animation = ''
+            }else{
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0}s`;
+            }
+        });
 
-navbarToggle.addEventListener('click',function(){
+        //burger animation
+        burger.classList.toggle('toggle');
 
-    if(this.classList.contains('active')){
-        mainNav.style.display="none";
-        this.classList.remove('active');
-    }
-    else{
-        mainNav.style.display="flex";
-        this.classList.add('active');
+    
+    });
 
-    }
-});
+}
+
+navSlide();
