@@ -118,10 +118,15 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
+.bodydown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 .container{
-  width:350px;
+  width:325px;
   display: flex;
   justify-content:center;
   align-items:center;
