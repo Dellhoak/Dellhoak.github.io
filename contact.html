@@ -3,9 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0', shrink-to-fit=no">
-    <link rel="Stylesheet" type="text/css" href="style.css">
-    <link rel="Stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="Stylesheet" type="text/css" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>DELLHOAK</title>
 </head>
 <body>
@@ -16,9 +16,9 @@
             </div>
             <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="work.html">wORK</a></li>
-            <li><a href="#">aBOt</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="#">About</a></li>
             </ul>
             <div class="burger">
             <div class="line1"></div>
@@ -26,8 +26,28 @@
             <div class="line3"></div>
             </div>
         </nav>
-        <div class="bodydown">
-            <h1>This is a heading</h1>
+        <div class="container">
+            <form action="webform.php" method="POST" class="form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Send Message!</button>
+                </div>
+            </form>
         </div>
     </div>
   <script src="main.js"></script>

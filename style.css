@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   font-family: "Balsamiq Sans", cursive;
+  /* font-family: 'Fredoka One', cursive; */
+
 }
 
 .page {
@@ -10,7 +12,7 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  background-image: url("back2.jpg");
+  background-color: #82C4D2; /*url("back2.jpg")*/
   background-size: cover;
 }
 
@@ -19,14 +21,14 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgba(37, 53, 77, 0.8);
+  background-color: rgba(111,167,180 , 1);
 }
 
 .logo {
-  color: silver;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .nav-links {
@@ -38,11 +40,15 @@ nav {
   list-style: none;
 }
 .nav-links a {
-  color: silver;
+  color: black;
   text-decoration: none;
   letter-spacing: 3px;
+  font-size: 17px;
+}
+
+.nav-links a:hover {
+  font-size: 19px;
   font-weight: bold;
-  font-size: 15px;
 }
 
 .burger {
@@ -53,7 +59,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: silver;
+  background-color: black;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -73,7 +79,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: rgba(37, 53, 77, 0.8);
+    background-color: rgba(111,167,180 , 1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,12 +126,12 @@ nav {
   margin-top: 90px;
   justify-content: center;
   text-align: center;
-  color: silver;
+  color: black;
 }
 
 .ProfileCard {
   width: 370px;
-  background-color: rgba(37, 53, 77, 0.8);
+  background-color:rgba(111,167,180 , 1);
   padding: 30px 0;
   border-radius: 10%;
 }
@@ -142,6 +148,6 @@ img {
 }
 
 i {
-  color: seashell;
+  color: black;
   padding: 5px;
 }
